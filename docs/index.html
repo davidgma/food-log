@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Eat</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
+      details > summary { list-style: none; cursor: pointer; }
+      details > summary::-webkit-details-marker { display: none; }
+      details { transition: all 0.3s ease; }
+      .markdown-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+      .markdown-content ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1rem; }
+      .markdown-content li { margin-bottom: 0.25rem; }
+      .markdown-content p { margin-bottom: 1rem; }
+      .markdown-content h1 { font-size: 2.25rem; font-weight: 800; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.2; }
+      .markdown-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem; line-height: 1.25; }
+      .markdown-content h3 { font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; line-height: 1.3; }
+      .markdown-content h4 { font-size: 1.25rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; line-height: 1.4; }
+      .markdown-content a { color: #2563eb; text-decoration: underline; }
+      .markdown-content blockquote { border-left: 4px solid #e5e7eb; padding-left: 1rem; font-style: italic; color: #4b5563; }
+      .markdown-content code { background-color: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.875em; }
+      .markdown-content pre code { background-color: transparent; padding: 0; }
+      .markdown-content pre { background-color: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="bg-[#FAFAFA] text-[#111111] font-sans flex flex-col p-8 md:p-12 selection:bg-blue-200 selection:text-black max-w-5xl mx-auto w-full">
+  <header class='mb-8 border-b-4 border-blue-600 pb-4 flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
+    <div>
+      <h1 class='text-5xl md:text-7xl font-black tracking-tighter text-blue-600 leading-[0.8]'>What I Eat</h1>
+    </div>
+  </header>
+
+  <main class='flex-1 flex flex-col gap-4'>
+    <div class='flex justify-end gap-3 mb-2'>
+      <button id='expand-all' class='text-sm font-bold text-blue-600 hover:underline px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-md transition-colors'>Expand All</button>
+      <button id='collapse-all' class='text-sm font-bold text-gray-600 hover:underline px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors'>Collapse All</button>
+    </div>
+
+    <!-- COLLAPSIBLE: OVERVIEW -->
+    <div class='border-b-2 border-black/10'>
+      <details id='details-overview' class='group'>
+        <summary class='list-none flex items-center justify-between cursor-pointer py-4 group-open:pb-2'>
+          <h2 class='text-3xl font-extrabold text-blue-600 capitalize tracking-tight'>Overview of my Theory</h2>
+          <span class='text-2xl font-black transition-transform duration-300 group-open:rotate-45 text-blue-600'>+</span>
+        </summary>
+        <div class='markdown-content pb-6 md:pr-24 text-lg md:text-xl leading-snug font-medium text-black/80'>
+            <h2>Everyone has their own theory about health and losing weight, and this is mine 😆.</h2>
+<p>Humans have evolved to be slim - evolutionary pressures demanded it. The Thrifty Gene Hypothesis is complete nonsense. We have a natural mechanism to keep us slim that acts via our appetite. Where people are not slim, it is generally because they have broken the mechanism. The solution is to fix the mechanism. The solution is not to starve yourself when you are hungry or force yourself to exercise when you are lethargic. These approaches are unsustainable. If you fix the mechanism, your body will make you slimmer gradually over time by reducing your appetite and making you feel more energetic. You can&#39;t fight your body, you have to work with it.</p>
+<p>Calories are interesting, and fewer is generally better, but focusing too much on them is not the route to being slim. If the mechanism is working correctly, calories do not make you fat, they make you less hungry and more energetic. </p>
+<p>I remember what people ate 50 years ago, at least in my albeit rather privileged environment. People ate three meals a day, and snacks in between meals if they were hungry, and they ate until they were no longer hungry. They didn&#39;t ever go hungry, but were almost never overweight, in fact most people, adults and children, would have been considered quite skinny by today&#39;s standards. There were no takeaways other than the fish and chip shop, and going there was considered a rare treat. Even the well-off couldn&#39;t afford to eat at restaurants other than very infrequently - they had dinner parties instead. There were no ready meals. People bought single ingredients at their local green grocer, butcher, fishmonger and grocer, that were in effect organic, and cooked them in their own kitchens. </p>
+<p>There have been more changes in how we source our food in the last 50 years than in the 5,000 years before that. These changes are responsible for breaking the mechanism. It is not known exactly which changes have been the most damaging, but in my opinion they are probably:</p>
+<ol>
+<li>Dramatic increases in dietary histamine and other amines.</li>
+<li>Factors that damage the gut microbiome (which includes pesticides and refined carbohydrates).</li>
+<li>Artificial additives (and this includes things like &#39;yeast extract&#39; and &#39;natural flavouring&#39; which in my opinion are a &#39;clean labelling&#39; scam and every bit as bad as the old E numbers).</li>
+<li>Insufficient micronutrients.</li>
+<li>Excessive saturated fat.</li>
+</ol>
+<p>Unfortunately, most foods available in supermarkets, restaurants and takeaways nowadays break the mechanism. Non-organic foods are generally high in both histamine and pesticides. Tinned, vacuum-packed foods and foods packed in a protective environment (particularly meat and fish) are generally high in histamine. Ready meals are generally a nightmarish amalgam of everything bad. In practice, in my opinion, the sad fact is that you can really only fix and maintain the mechanism by preparing food yourself from mainly organic single ingredients.</p>
+<h3>A very high-level guide to what you can and should eat (cooked where appropriate)</h3>
+<ul>
+<li>dry organic whole grains and legumes (flour or kernels).</li>
+<li>organic potatoes</li>
+<li>organic sweet potatoes (or carrots) (for the vitamin A)</li>
+<li>organic fresh or frozen vegetables and fruit.</li>
+<li>organic leafy greens including rocket, watercress, cabbage and kale (for the vitamin K and calcium)</li>
+<li>organic or wild-caught, very fresh or frozen, salmon or other oily fish.</li>
+<li>live, very fresh or frozen prawns or other shellfish, especially live oysters (but you can cook them; for the zinc) (it&#39;s hard to get these organic unfortunately).</li>
+<li>organic nuts and seeds (roasting them is fine, even preferable).</li>
+<li>organic eggs (for the choline).</li>
+<li>organic brewed coffee, tea and other infusions.</li>
+<li>organic extra virgin olive oil or other organic cold-pressed nut or seed oils.</li>
+<li>organic dried and fresh herbs and spices.</li>
+<li>occasional dried seaweed (for the iodine).</li>
+<li>a small weekly amount of very fresh or frozen chicken livers (for the vitamin K2 mark 4). (I&#39;ve only recently added this to my diet after cutting out dairy.)</li>
+<li>limited chicken and very limited or no red meat.</li>
+</ul>
+<h2>Diet types</h2>
+<p>I&#39;m a fan of the Mediterranean Diet. It has the best health outcomes in studies. Hunter-gatherer and low carb diets have the worst outcomes (apart from the Standard American/British Diet of course which is really bad) and should be avoided.</p>
+<p>I&#39;m also a fan of Dr Denmark&#39;s theory that every meal should contain a good source of protein and a good source of starch. I try to mostly comply with this, and also try to add a good source of non-dairy calcium too. Note that whole grains and legumes are a good source of protein and starch, and sometimes of calcium too (e.g. amaranth or mung beans). Dr Leila Denmark was an American doctor who was still practicing medicine at the age of 100 and lived to 114.</p>
+<p>When I eat whole grains and legumes, I almost always soak them first. I soak the grain kernels at least overnight and the flours for up to a day. This has a lot of theoretical benefits: the enzymes phytase, amylase and protease are activated and a small amount of fermentation occurs in the flours. This is supposed to make the food more nutritious and better for the gut microbiome without generating too much histamine.</p>
+<h2>A note about my food diaries</h2>
+<p>I don&#39;t actually weigh salt, herbs, spices etc, I just put them in my food log at an arbitrary amount e.g. 0.1g. So the weights for these aren&#39;t accurate.</p>
+<p>Note also that although I mostly put the raw weights into the nutrition software, I do cook my food.</p>
+<h2>A note about cooking technique</h2>
+<p>Where you see a meal that doesn&#39;t contain any added oil but instead has mixed roasted nuts or peanut butter, what I do is I boil the vegetables in a very small amount of water, then at the end I add the roasted nuts and puree it all with an immersion blender. The oil in the nuts substitutes for the added oil and actually makes the whole thing taste nicer than if I had used olive oil. The pureeing makes it easier to digest and makes the nutrients more absorbable, according to AI.</p>
+<p>For root vegetables, I generally steam them and then roast them with oil in my Ninja Foodi.</p>
+
+        </div>
+      </details>
+    </div>
+
+    <!-- COLLAPSIBLE: FOOD LOG -->
+    <div class='border-b-2 border-black/10'>
+      <details id='details-foodlog' class='group'>
+        <summary class='list-none flex items-center justify-between cursor-pointer py-4'>
+          <h2 class='text-3xl font-extrabold text-blue-600 capitalize tracking-tight'>Food Log</h2>
+          <span class='text-2xl font-black transition-transform duration-300 group-open:rotate-45 text-blue-600'>+</span>
+        </summary>
+        <div class='flex flex-col gap-3 pb-8'>
+            
+            
+                <details id='details-date-20260825' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Tuesday 25/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 '>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260825 groceries o.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Ocado Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260824' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Monday 24/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260824 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260824' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 07:10 )
+Black Pepper (0.1g 14:50 )
+Blueberry (125g 14:50 )
+Brazil nuts (2.1g 14:50 )
+Cinnamon (0.5g 14:50 )
+Cucumber (136g 14:50 )
+Curry Powder (1g 14:50 )
+Extra Virgin Olive Oil (10.1g 14:50 )
+Fish, Salmon, Atlantic, Wild (112g 14:50 )
+Garlic (5g 14:50 )
+Leeks (206g 14:50 )
+Mixed herbs (0.1g 14:50 )
+Mixed nuts with peanuts (30g 14:50 )
+Potatoes (417g 14:50 )
+Rosemary (0.2g 14:50 )
+Salt (2g 14:50 )
+Sweet Potato (310g 14:50 )
+Black Pepper (0.1g 21:30 )
+Celery (304g 21:30 )
+Eggs (57g 21:30 )
+Garlic (5g 21:30 )
+Ginger Root (1g 21:30 )
+Peanut butter (52g 21:30 )
+Pomegranate (172g 21:30 )
+Quinoa - white (100g 21:30 )
+Salt (2g 21:30 )
+Sumac (0.5g 21:30 )
+Weight eaten: 2051 g
+Calories eaten: 2167 kCal
+kcal/g: 1.1
+Total exercise: 127 kCal
+Net calories: 2040 kCal
+Fat 31%, Carbs 54%, Protein 14%
+Saturated fat: 13.1g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260823' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Sunday 23/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260823 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260823' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 08:50 )
+Avocado (117g 16:10 )
+Black Pepper (0.1g 16:10 )
+Brazil nuts (2.8g 16:10 )
+Celery (264g 16:10 )
+Cucumber (150g 16:10 )
+Curry Powder (1g 16:10 )
+Eggs (55g 16:10 )
+Extra Virgin Olive Oil (15.5g 16:10 )
+Garlic (5g 16:10 )
+Ginger Root (1g 16:10 )
+Mixed herbs (0.1g 16:10 )
+Mixed nuts with peanuts (25g 16:10 )
+Nutmeg (0.5g 16:10 )
+Raspberries (125g 16:10 )
+Red onion (74g 16:10 )
+Red rice (100g 16:10 )
+Salt (2g 16:10 )
+Watercress (56g 16:10 )
+White Mushrooms (75g 16:10 )
+Amaranth flour (100g 21:30 )
+Apple Cider Vinegar (4.5g 21:30 )
+Avocado Oil (10.8g 21:30 )
+Cocoa Powder (8g 21:30 )
+Extra Virgin Olive Oil (5.5g 21:30 )
+Flax seeds (15g 21:30 )
+Kale (24g 21:30 )
+Maple Syrup (17.2g 21:30 )
+Oat flour (4g 21:30 )
+Salt (2g 21:30 )
+Shrimp, Mixed Species (200g 21:30 )
+Tomato (82g 21:30 )
+Vanilla Extract (1g 21:30 )
+Weight eaten: 1487 g
+Calories eaten: 1987 kCal
+kcal/g: 1.3
+Total exercise: 312 kCal
+Net calories: 1675 kCal
+Fat 40%, Carbs 46%, Protein 14%
+Saturated fat: 15.4g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 border-t border-gray-100'>
+                                <span class='text-2xl leading-none'>📈</span>
+                                <a href="./20260823 nutrition.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Fortnightly Cronometer Nutrition Report</a>
+                            </div>
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260822' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Saturday 22/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260822 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260822' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 09:00 )
+Apple Cider Vinegar (5.52g 16:30 )
+Avocado (109g 16:30 )
+Barley Flour, Whole Grain (50g 16:30 )
+Black Pepper (0.1g 16:30 )
+Extra Virgin Olive Oil (29.5g 16:30 )
+Fish, Salmon, Atlantic, Wild (106g 16:30 )
+Flax seeds (15g 16:30 )
+Leeks (199g 16:30 )
+Mung Bean Flour (50g 16:30 )
+Oat flour (7g 16:30 )
+Red cabbage (224g 16:30 )
+Salt (4g 16:30 )
+Turmeric Chai spices (5g 16:30 )
+Watercress (51g 16:30 )
+Blackberries (150g 17:50 )
+Brazil nuts (2.4g 17:50 )
+Mixed nuts with peanuts (23g 17:50 )
+Weight eaten: 980 g
+Calories eaten: 1465 kCal
+kcal/g: 1.5
+Total exercise: 11 kCal
+Net calories: 1455 kCal
+Fat 45%, Carbs 41%, Protein 15%
+Saturated fat: 11.0g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260821' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Friday 21/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260821 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260821' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 09:00 )
+Avocado (118g 15:40 )
+Black Pepper (0.1g 15:40 )
+Brown onion (108g 15:40 )
+Chicken, Liver, All Classes, Cooked, simmered (41g 15:40 )
+Curry Powder (1g 15:40 )
+Extra Virgin Olive Oil (26.200000000000003g 15:40 )
+Garlic (5g 15:40 )
+Ginger Root (1g 15:40 )
+Kale (29g 15:40 )
+Mixed herbs (0.1g 15:40 )
+Potatoes (417g 15:40 )
+Red cabbage (214g 15:40 )
+Salt (2g 15:40 )
+Spices, Paprika (1g 15:40 )
+Sweet Potato (166g 15:40 )
+Tomato (86g 15:40 )
+Watercress (49g 15:40 )
+White Mushrooms (75g 15:40 )
+Blueberries (150g 20:20 )
+Brazil nuts (3.3g 20:20 )
+Mixed nuts with peanuts (30g 20:20 )
+Weight eaten: 1474 g
+Calories eaten: 1372 kCal
+kcal/g: 0.9
+Total exercise: 128 kCal
+Net calories: 1244 kCal
+Fat 43%, Carbs 48%, Protein 10%
+Saturated fat: 10.8g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 border-t border-gray-100'>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260821 groceries w.html" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Waitrose Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260820' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Thursday 20/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260820 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260820' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 08:00 )
+Avocado (123g 19:50 )
+Black Pepper (0.1g 19:50 )
+Brazil nuts (2.1g 19:50 )
+Brown onion (121g 19:50 )
+Brown rice (100g 19:50 )
+Chili Powder (0.1g 19:50 )
+Extra Virgin Olive Oil (18.1g 19:50 )
+Garlic (5g 19:50 )
+Ginger (1g 19:50 )
+Kale (50g 19:50 )
+Mango (248g 19:50 )
+Mixed nuts with peanuts (19g 19:50 )
+Portabella Mushrooms (103g 19:50 )
+Red peppers (56g 19:50 )
+Salt (2g 19:50 )
+Shrimp, Mixed Species (200g 19:50 )
+Tarragon (0.1g 19:50 )
+Tomato (107g 19:50 )
+Dijon Mustard (6g 21:20 )
+Eggs (60g 21:20 )
+Honey (13g 21:20 )
+Mixed nuts with peanuts (39g 21:20 )
+Raspberries (150g 21:20 )
+Weight eaten: 1424 g
+Calories eaten: 1737 kCal
+kcal/g: 1.2
+Total exercise: 372 kCal
+Net calories: 1365 kCal
+Fat 41%, Carbs 44%, Protein 15%
+Saturated fat: 14.1g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260819' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Wednesday 19/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260819 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260819' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 08:00 )
+Avocado (105g 15:22 )
+Black Pepper (0.1g 15:22 )
+Brown onion (123g 15:22 )
+Curry Powder (1g 15:22 )
+Extra Virgin Olive Oil (25.700000000000003g 15:22 )
+Garlic (5g 15:22 )
+Ginger (1g 15:22 )
+Kale (61g 15:22 )
+Oyster (46g 15:22 )
+Portabella Mushrooms (103g 15:22 )
+Potatoes (458g 15:22 )
+Red peppers (113g 15:22 )
+Rocket (49g 15:22 )
+Salmon (125g 15:22 )
+Salt (2g 15:22 )
+Sumac (0.5g 15:22 )
+Sweet Potato (180g 15:22 )
+Turmeric (0.5g 15:22 )
+Amaranth flour (100g 20:30 )
+Apple Cider Vinegar (4.8g 20:30 )
+Cocoa Powder (8g 20:30 )
+Eggs (55g 20:30 )
+Extra Virgin Olive Oil (6g 20:30 )
+Flax seeds (15g 20:30 )
+Maple Syrup (15.9g 20:30 )
+Oat flour (4g 20:30 )
+Peanut butter (27g 20:30 )
+Salt (2g 20:30 )
+Vanilla Extract (2g 20:30 )
+Weight eaten: 1639 g
+Calories eaten: 2134 kCal
+kcal/g: 1.3
+Total exercise: 86 kCal
+Net calories: 2048 kCal
+Fat 41%, Carbs 44%, Protein 14%
+Saturated fat: 17.9g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260818' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Tuesday 18/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260818 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260818' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 09:50 )
+Apple Cider Vinegar (6.82g 15:30 )
+Black Pepper (0.1g 15:30 )
+Broccoli (203g 15:30 )
+Einkorn (50g 15:30 )
+Extra Virgin Olive Oil (26.5g 15:30 )
+Flax seeds (15g 15:30 )
+Garlic (5g 15:30 )
+Ginger Root (1g 15:30 )
+Mixed herbs (0.1g 15:30 )
+Oat flour (4g 15:30 )
+Oyster (54g 15:30 )
+Quinoa - red (50g 15:30 )
+Rocket (52g 15:30 )
+Salmon (125g 15:30 )
+Salt (4g 15:30 )
+Black Pepper (0.1g 21:20 )
+Black rice (100g 21:20 )
+Brazil nuts (2.3g 21:20 )
+Cucumber (167g 21:20 )
+Eggs (57g 21:20 )
+Garlic (5g 21:20 )
+Ginger Root (1g 21:20 )
+Honey (13g 21:20 )
+Kale (67g 21:20 )
+Mint (0.1g 21:20 )
+Mixed nuts with peanuts (12g 21:20 )
+Rapeseed Oil (18.9g 21:20 )
+Raspberries (51g 21:20 )
+Raspberry Juice (19g 21:20 )
+Salt (2g 21:20 )
+Spices, Paprika (1g 21:20 )
+Weight eaten: 1113 g
+Calories eaten: 1947 kCal
+kcal/g: 1.7
+Total exercise: 86 kCal
+Net calories: 1861 kCal
+Fat 42%, Carbs 42%, Protein 16%
+Saturated fat: 14.3g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 border-t border-gray-100'>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260818 groceries o.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Ocado Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260817' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Monday 17/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260817 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260817' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 08:30 )
+Apple Cider Vinegar (4.52g 15:10 )
+Black Pepper (0.1g 15:10 )
+Buckwheat Flour (50g 15:10 )
+Cucumber (84g 15:10 )
+Extra Virgin Olive Oil (23.4g 15:10 )
+Fennel Bulb (250g 15:10 )
+Flax seeds (15g 15:10 )
+Garlic (5g 15:10 )
+Ginger Root (1g 15:10 )
+Lemongrass and ginger spices (0.5g 15:10 )
+Lentils - red (50g 15:10 )
+Oat flour (4g 15:10 )
+Salmon (125g 15:10 )
+Salt (4g 15:10 )
+White Mushrooms (67g 15:10 )
+Apples, Raw, without Skin (105g 15:30 )
+Brown Sugar (11g 15:30 )
+Mixed nuts with peanuts (21g 15:30 )
+Oat flour (14g 15:30 )
+Raspberries (48g 15:30 )
+Raspberry Juice (33g 15:30 )
+Avocado Oil (11.7g 21:20 )
+Black Pepper (0.1g 21:20 )
+Curry Powder (1g 21:20 )
+Egg shell (1g 21:20 )
+Eggs (55g 21:20 )
+Garlic (5g 21:20 )
+Ginger Root (1g 21:20 )
+Lemon Juice (6g 21:20 )
+Millet (100g 21:20 )
+Nutmeg (0.5g 21:20 )
+Salt (2g 21:20 )
+Spinach (116g 21:20 )
+sweetcorn (118g 21:20 )
+Weight eaten: 1333 g
+Calories eaten: 2053 kCal
+kcal/g: 1.5
+Total exercise: 86 kCal
+Net calories: 1967 kCal
+Fat 37%, Carbs 48%, Protein 15%
+Saturated fat: 14.9g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260816' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Sunday 16/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260816 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260816' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 08:30 )
+Apple Cider Vinegar (4.8g 13:20 )
+Barley Flour, Whole Grain (50g 13:20 )
+Black Pepper (0.1g 13:20 )
+Cucumber (98g 13:20 )
+Curry Powder (1g 13:20 )
+Extra Virgin Olive Oil (20.1g 13:20 )
+Flax seeds (15g 13:20 )
+Garlic (5g 13:20 )
+Ginger Root (1g 13:20 )
+Mixed herbs (0.1g 13:20 )
+Mung Bean Flour (50g 13:20 )
+Oat flour (4g 13:20 )
+Peas, Green, Frozen, Unprepared (182g 13:20 )
+Salmon (125g 13:20 )
+Salt (4g 13:20 )
+Spring greens (42g 13:20 )
+sweetcorn (90g 13:20 )
+Tomato (72g 13:20 )
+Brazil nuts (2.5g 15:20 )
+Honey (15g 15:20 )
+Mixed nuts with peanuts (25g 15:20 )
+Oat flour (27g 15:20 )
+Raspberries (106g 15:20 )
+Raspberry Juice (41g 15:20 )
+Borough Broth, Free-Range Organic Bone Broth, Chicken (39g 20:30 )
+Brown onion (154g 20:30 )
+Brown rice (100g 20:30 )
+Eggs (56g 20:30 )
+Rapeseed Oil (11g 20:30 )
+Spinach (100g 20:30 )
+Weight eaten: 1441 g
+Calories eaten: 2185 kCal
+kcal/g: 1.5
+Total exercise: 86 kCal
+Net calories: 2099 kCal
+Fat 34%, Carbs 51%, Protein 15%
+Saturated fat: 14.4g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260815' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Saturday 15/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260815 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260815' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 06:39 )
+Avocado (98g 16:40 )
+Black Pepper (0.1g 16:40 )
+Blueberry (150g 16:40 )
+Celery (246g 16:40 )
+Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted (103g 16:40 )
+Extra Virgin Olive Oil (11.4g 16:40 )
+Garlic (5g 16:40 )
+Ginger (1g 16:40 )
+Mixed herbs (0.1g 16:40 )
+Quinoa - white (100g 16:40 )
+Salt (2g 16:40 )
+Spring greens (63g 16:40 )
+Tomato (86g 16:40 )
+Apple (106g 18:10 )
+Mixed nuts with peanuts (26g 18:10 )
+Apple Cider Vinegar (5.6g 19:30 )
+Avocado Oil (11.8g 19:30 )
+Black Pepper (0.1g 19:30 )
+Courgette (194g 19:30 )
+Curry Powder (1g 19:30 )
+Eggs (57g 19:30 )
+Einkorn (50g 19:30 )
+Extra Virgin Olive Oil (5.7g 19:30 )
+Flax seeds (15g 19:30 )
+Peanut butter (37g 19:30 )
+Peas, Green, Frozen, Unprepared (99g 19:30 )
+Quinoa - red (50g 19:30 )
+Salt (4g 19:30 )
+Sumac (0.5g 19:30 )
+Weight eaten: 1528 g
+Calories eaten: 2276 kCal
+kcal/g: 1.5
+Total exercise: 86 kCal
+Net calories: 2191 kCal
+Fat 44%, Carbs 40%, Protein 16%
+Saturated fat: 19.1g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260814' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Friday 14/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260814 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260814' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 07:50 )
+Anise Seed (0.5g 16:00 )
+Black Pepper (0.1g 16:00 )
+Brown onion (81g 16:00 )
+Cucumber (119g 16:00 )
+Curry Powder (1g 16:00 )
+Extra Virgin Olive Oil (13.3g 16:00 )
+Garlic (5g 16:00 )
+Ginger Root (1g 16:00 )
+Mixed herbs (0.1g 16:00 )
+Potatoes (422g 16:00 )
+Rapeseed Oil (8.7g 16:00 )
+Salmon (125g 16:00 )
+Salt (2g 16:00 )
+Seaweed, Kelp (0.2g 16:00 )
+Spices, Paprika (1g 16:00 )
+Spring greens (98g 16:00 )
+Sweet Potato (231g 16:00 )
+White Mushrooms (69g 16:00 )
+Brazil nuts (4g 17:20 )
+Mango (298g 17:20 )
+Mixed nuts with peanuts (24g 17:20 )
+Amaranth flour (100g 20:20 )
+Apple Cider Vinegar (6g 20:20 )
+Avocado (80g 20:20 )
+Cocoa Powder (8g 20:20 )
+Eggs (55g 20:20 )
+Extra Virgin Olive Oil (5.6g 20:20 )
+Flax seeds (15g 20:20 )
+Maple Syrup (12g 20:20 )
+Oat flour (2g 20:20 )
+Rocket (26g 20:20 )
+Salt (2g 20:20 )
+Weight eaten: 1816 g
+Calories eaten: 2170 kCal
+kcal/g: 1.2
+Total exercise: 190 kCal
+Net calories: 1981 kCal
+Fat 38%, Carbs 49%, Protein 13%
+Saturated fat: 16.8g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260813' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Thursday 13/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260813 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260813' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 07:45 )
+Extra Virgin Olive Oil (17.7g 14:05 )
+Fennel Bulb (190g 14:07 )
+Cucumber (81g 14:10 )
+Tomato (79g 14:11 )
+Black Pepper (0.1g 14:15 )
+Garlic (5g 14:15 )
+Ginger Root (1g 14:15 )
+Salt (2g 14:15 )
+Shrimp, Mixed Species (200g 14:15 )
+Sumac (0.5g 14:15 )
+Mixed herbs (0.1g 14:16 )
+Red rice (100g 14:17 )
+Rocket (31g 14:17 )
+Oyster (32g 14:26 )
+Apples, Raw, without Skin (99g 16:30 )
+Brazil nuts (2.5g 16:30 )
+Mixed nuts with peanuts (25g 16:30 )
+Raspberry (149g 16:30 )
+Amaranth flour (100g 19:50 )
+Apple Cider Vinegar (8.7g 19:50 )
+Egg (57g 19:50 )
+Extra Virgin Olive Oil (11.9g 19:50 )
+Flax seeds (15g 19:50 )
+Oat flour (2g 19:50 )
+Peanut butter (15g 19:50 )
+Salt (2g 19:50 )
+Weight eaten: 1227 g
+Calories eaten: 1825 kCal
+kcal/g: 1.5
+Total exercise: 130 kCal
+Net calories: 1696 kCal
+Fat 37%, Carbs 47%, Protein 16%
+Saturated fat: 13.2g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260812' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Wednesday 12/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        <div class='flex items-center gap-3'>
+                                     <span class='text-2xl leading-none'>🍎</span>
+                                     <a href="./20260812 detail.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors'>Detailed Cronometer Daily Report</a>
+                                   </div><details id='details-summary-20260812' class='group/summary'>
+                                     <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                       <span class='text-2xl leading-none mt-0.5'>🍽️</span>
+                                       <div class='flex-1 flex items-center mt-1'>
+                                         <span class='font-bold text-lg text-blue-600 transition-colors group-hover/summary:underline'>Summary</span>
+                                         <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/summary:-rotate-180'>▼</span>
+                                       </div>
+                                     </summary>
+                                     <div class='ml-9 mt-2'>
+                                       <pre class='whitespace-pre-wrap text-sm text-black/80 font-mono bg-gray-50 p-4 border border-gray-100 rounded-md'>Coffee (600g 07:45 )
+Pomegranate Juice (86g 07:45 )
+Black Pepper (0.1g 13:15 )
+Brown onion (94g 13:15 )
+Extra Virgin Olive Oil (21.7g 13:15 )
+Garlic (5g 13:15 )
+Ginger Root (1g 13:15 )
+Mixed herbs (0.1g 13:15 )
+Oyster (32g 13:15 )
+Potatoes (413g 13:15 )
+Rocket (44g 13:15 )
+Salt (2g 13:15 )
+Samphire (99g 13:15 )
+Sweet Potato (203g 13:15 )
+Turmeric Chai spices (5g 13:15 )
+White Mushrooms (70g 13:15 )
+Apple Cider Vinegar (6g 20:00 )
+Avocado Oil (15.8g 20:00 )
+Black Pepper (0.1g 20:00 )
+Buckwheat Flour (50g 20:00 )
+Celery (221g 20:00 )
+Cucumber (83g 20:00 )
+Eggs (56g 20:00 )
+Extra Virgin Olive Oil (5.1g 20:00 )
+Fennel Seed (2g 20:00 )
+Flax seeds (15g 20:00 )
+Garlic (5g 20:00 )
+Lentils - red (50g 20:00 )
+Oat flour (2g 20:00 )
+Salt (4g 20:00 )
+Salmon (125g 20:04 )
+Apples, Raw, without Skin (106g 20:25 )
+Brazil nuts (6.3g 20:25 )
+Mixed nuts with peanuts (21g 20:25 )
+Weight eaten: 1849 g
+Calories eaten: 2083 kCal
+kcal/g: 1.1
+Total exercise: 0 kCal
+Net calories: 2083 kCal
+Fat 39%, Carbs 46%, Protein 14%
+Saturated fat: 16.1g
+</pre>
+                                     </div>
+                                   </details>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260811' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Tuesday 11/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 '>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260811 groceries o.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Ocado Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260804' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Tuesday 04/08/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 '>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260804 groceries o.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Ocado Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260728' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Tuesday 28/07/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        
+                        
+                        
+                        
+                        
+                            <div class='flex items-center gap-3 pt-2 '>
+                                <span class='text-2xl leading-none'>🛒</span>
+                                <a href="./20260728 groceries o.pdf" class='font-bold text-lg text-blue-600 hover:underline transition-colors line-clamp-1'>Ocado Grocery Delivery</a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+                <details id='details-date-20260403' class='group/date border border-black/10 bg-white shadow-sm rounded-lg overflow-hidden'>
+                    <summary class='list-none flex items-center justify-between cursor-pointer p-4 bg-gray-50 hover:bg-gray-100 transition-colors'>
+                        <span class='text-xl md:text-2xl font-bold'>Friday 03/04/2026</span>
+                        <span class='text-xl font-black transition-transform duration-300 group-open/date:rotate-45'>+</span>
+                    </summary>
+                    <div class='flex flex-col gap-4 p-4 md:p-6 border-t border-black/5'>
+                        
+                        
+                        
+                            <details id='details-grocery-image-20260403-0' class='group/grocery-image mt-2 pt-2 '>
+                              <summary class='flex items-start gap-3 cursor-pointer list-none outline-none'>
+                                <span class='text-2xl leading-none mt-0.5'>🛒</span>
+                                <div class='flex-1 flex items-center mt-1'>
+                                  <span class='font-bold text-lg text-blue-600 transition-colors group-hover/grocery-image:underline'>Forest Whole Foods Grocery Delivery</span>
+                                  <span class='ml-2 text-sm opacity-50 transition-transform duration-300 group-open/grocery-image:-rotate-180'>▼</span>
+                                </div>
+                              </summary>
+                              <div class='ml-9 mt-2'>
+                                <img src="./20260403 groceries f.png" alt="Forest Whole Foods Grocery Delivery" class="max-w-full h-auto border border-gray-200 rounded-md shadow-sm" />
+                              </div>
+                            </details>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </details>
+            
+        </div>
+      </details>
+    </div>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const detailsElements = document.querySelectorAll("details[id]");
+      
+      // Check if this is a back/forward navigation
+      let isBackForward = false;
+      const navEntries = performance.getEntriesByType("navigation");
+      if (navEntries.length > 0) {
+        isBackForward = navEntries[0].type === "back_forward";
+      } else if (window.performance && performance.navigation) {
+        isBackForward = performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD;
+      }
+
+      if (isBackForward) {
+        // Restore state only if navigating back
+        detailsElements.forEach(details => {
+          const state = sessionStorage.getItem(details.id);
+          if (state === "open") {
+            details.setAttribute("open", "");
+          } else if (state === "closed") {
+            details.removeAttribute("open");
+          }
+        });
+      } else {
+        // Otherwise start collapsed and clear old states
+        detailsElements.forEach(details => {
+          sessionStorage.removeItem(details.id);
+          details.removeAttribute("open");
+        });
+      }
+
+      // Save state on toggle
+      detailsElements.forEach(details => {
+        details.addEventListener("toggle", (e) => {
+          sessionStorage.setItem(details.id, details.open ? "open" : "closed");
+        });
+      });
+
+      // Expand/Collapse All
+      document.getElementById("expand-all")?.addEventListener("click", () => {
+        detailsElements.forEach(details => {
+          details.setAttribute("open", "");
+          sessionStorage.setItem(details.id, "open");
+        });
+      });
+
+      document.getElementById("collapse-all")?.addEventListener("click", () => {
+        detailsElements.forEach(details => {
+          details.removeAttribute("open");
+          sessionStorage.setItem(details.id, "closed");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
